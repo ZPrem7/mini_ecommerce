@@ -1,0 +1,23 @@
+This web application project have webpages for login, register the users.
+after login we can see the products and do CRUD operations
+
+This project also contains API
+
+first create a superuser and using the command "python manage.py createsupperuser",
+
+In postman application
+generate a token using POST "http://127.0.0.1:8000/api/token/"  
+In the body --> x-www-form-urlencoded
+
+In key "username"  ,  value  <superuser>
+In key "password"  ,  value  <password>
+
+copy the "access key"
+AFTER 
+
+GET   "http://127.0.0.1:8000/api/product/"
+
+IN Authorization
+   Auth type--> Bearer Token
+   Token -->  paste the access token
+
